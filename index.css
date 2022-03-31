@@ -6,7 +6,7 @@
 .body {
   background: radial-gradient(
     ellipse at top,
-    rgb(101, 164, 247) -80%,
+    rgb(255, 31, 1) -80%,
     rgb(32, 33, 41) 60%
   );
   background-size: cover;
@@ -16,12 +16,12 @@
 
 .page {
   max-width: 1280px;
-  margin: 0 auto;
   box-sizing: border-box;
   color: white;
 }
 
 .header {
+  width: 100%;
   height: 30px;
   background-color: rgba(24, 24, 24, 0.8);
   display: flex;
@@ -35,14 +35,14 @@
 }
 
 .nav {
-  width: 100vw;
+  width: 100%;
   height: 55px;
   padding-bottom: 3px;
   background-color: rgba(30, 30, 30, 0.7);
   display: flex;
   align-items: flex-end;
   color: white;
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 10px rgb(255, 125, 3);
   border-radius: 0 0 10px 10px;
 }
 
@@ -55,19 +55,23 @@
 }
 
 .main {
+  max-width: 98%;
   width: 100%;
-  height: 100vh;
-  margin-top: 150px;
+  padding-bottom: 150px;
+  padding-top: 150px;
   display: flex;
-  justify-content: space-around;
   color: white;
   font-size: 30px;
+  padding-left: 140px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .app {
-  max-width: 260px;
+  max-width: 25vw;
   width: 100%;
-  height: 350px;
+  height: 30vw;
   background-color: rgb(24, 24, 24, 0.7);
   border-radius: 10px;
   display: flex;
@@ -75,7 +79,7 @@
 }
 
 .app :hover {
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 1px 1px 10px rgb(255, 125, 3);
 }
 
 .text {
@@ -86,16 +90,15 @@
 }
 
 .graph {
-  width: 650px;
-  height: 550px;
+  width: 50vw;
+  height: 42vw;
   background-color: rgb(24, 24, 24, 0.7);
   border-radius: 10px;
   text-align: center;
-  margin-top: -40px;
-  margin-left: -200px;
+  margin: -40px auto 0;
 }
 .graph :hover {
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 1px 1px 10px rgb(255, 125, 3);
 }
 
 .graph__text {
